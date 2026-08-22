@@ -5,7 +5,6 @@ import org.powernukkitx.utils.Config;
 
 import net.skycore.commands.*;
 import net.skycore.listeners.ChatAndJoinListener;
-import net.skycore.listeners.MarketInventoryListener;
 import net.skycore.managers.*;
 
 import java.io.File;
@@ -49,7 +48,6 @@ public class SkyCore extends PluginBase {
 
         // Listeners
         getServer().getPluginManager().registerEvents(new ChatAndJoinListener(this), this);
-        getServer().getPluginManager().registerEvents(new MarketInventoryListener(this), this);
 
         // Commands
         getCommand("island").setExecutor(new IslandCommand(this));
