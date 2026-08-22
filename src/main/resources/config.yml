@@ -1,0 +1,120 @@
+# ==========================================
+#  SkyCore - Ana Ayar Dosyasi
+# ==========================================
+
+economy:
+  starting-balance: 100.0
+  currency-symbol: "$"
+
+island:
+  world-name: "skyblock"
+  size: 100              # ada basina ayrilan alan (blok)
+  start-x: 0
+  start-z: 0
+  start-y: 100
+  spacing: 300            # adalar arasi mesafe
+  max-members: 6
+  level-per-block-value: 0.5
+
+scoreboard:
+  title: "&b&lSkyBlock"
+  update-interval-ticks: 20
+  lines:
+    - "&7-----------------"
+    - "&fOyuncu: &a{player}"
+    - "&fRutbe: {rank}"
+    - "&fBakiye: &a{currency}{balance}"
+    - "&fAda Seviyesi: &e{islandlevel}"
+    - "&7-----------------"
+    - "&fOnline: &a{online}"
+
+ranks:
+  order: [owner, admin, moderator, vip, default]
+  default:
+    prefix: "&7[Uye]&r "
+    color: "&7"
+    chat-format: "{prefix}{player}&f: {message}"
+  vip:
+    prefix: "&a[VIP]&r "
+    color: "&a"
+    chat-format: "{prefix}{player}&f: {message}"
+  moderator:
+    prefix: "&b[Mod]&r "
+    color: "&b"
+    chat-format: "{prefix}{player}&f: {message}"
+  admin:
+    prefix: "&c[Admin]&r "
+    color: "&c"
+    chat-format: "{prefix}{player}&f: {message}"
+  owner:
+    prefix: "&4[Kurucu]&r "
+    color: "&4"
+    chat-format: "{prefix}{player}&f: {message}"
+
+market:
+  # id: nukkit item id, meta: item meta/damage, buy: alis fiyati, sell: satis fiyati
+  items:
+    COBBLESTONE:
+      item-id: 4
+      meta: 0
+      buy: 2.0
+      sell: 0.5
+      slot: 10
+    OAK_LOG:
+      item-id: 17
+      meta: 0
+      buy: 5.0
+      sell: 1.5
+      slot: 11
+    SUGAR_CANE:
+      item-id: 338
+      meta: 0
+      buy: 3.0
+      sell: 1.0
+      slot: 12
+    MELON:
+      item-id: 360
+      meta: 0
+      buy: 4.0
+      sell: 1.2
+      slot: 13
+    PUMPKIN:
+      item-id: 86
+      meta: 0
+      buy: 4.0
+      sell: 1.2
+      slot: 14
+    IRON_INGOT:
+      item-id: 265
+      meta: 0
+      buy: 25.0
+      sell: 10.0
+      slot: 15
+    GOLD_INGOT:
+      item-id: 266
+      meta: 0
+      buy: 40.0
+      sell: 16.0
+      slot: 16
+    DIAMOND:
+      item-id: 264
+      meta: 0
+      buy: 250.0
+      sell: 100.0
+      slot: 19
+    NETHERRACK:
+      item-id: 87
+      meta: 0
+      buy: 2.0
+      sell: 0.4
+      slot: 20
+    SAND:
+      item-id: 12
+      meta: 0
+      buy: 2.0
+      sell: 0.5
+      slot: 21
+
+clan:
+  create-cost: 500.0
+  max-members: 15

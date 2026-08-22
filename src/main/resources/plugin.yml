@@ -1,0 +1,55 @@
+name: SkyCore
+main: net.skycore.SkyCore
+version: 1.0.0
+api: ["1.0.0"]
+author: Claude
+description: Tam donanimli SkyBlock core - ekonomi, ada, klan, rutbe, scoreboard, warp market
+commands:
+  island:
+    description: Ada yonetim komutu
+    usage: "/island <create|home|invite|accept|kick|leave|delete|level|setwarp|warp|tp>"
+    aliases: [is, ada]
+  money:
+    description: Bakiyeni gorurusun
+    usage: "/money [oyuncu]"
+    aliases: [bakiye, para]
+  pay:
+    description: Baska bir oyuncuya para gonder
+    usage: "/pay <oyuncu> <miktar>"
+  baltop:
+    description: En zengin oyuncular
+    usage: "/baltop"
+  clan:
+    description: Klan yonetim komutu
+    usage: "/clan <create|invite|accept|leave|disband|kick|chat|info>"
+    aliases: [c, klan]
+  rank:
+    description: Rutbe yonetim komutu (admin)
+    usage: "/rank <set|list|info> <oyuncu> [rutbe]"
+  market:
+    description: Warp market'i acar
+    usage: "/market"
+    aliases: [warpmarket, piyasa]
+  buy:
+    description: Marketten esya satin alir
+    usage: "/buy <esya> [miktar]"
+  sell:
+    description: Elindeki esyayi ya da belirtileni market'e satar
+    usage: "/sell [esya] [miktar]"
+  scoreboard:
+    description: Scoreboard'u ac/kapat
+    usage: "/scoreboard <on|off>"
+    aliases: [sb]
+permissions:
+  skycore.admin:
+    description: Tum SkyCore admin komutlarina erisim
+    default: op
+  skycore.island:
+    description: Ada komutlarini kullanma izni
+    default: true
+  skycore.market:
+    description: Market kullanma izni
+    default: true
+  skycore.clan:
+    description: Klan komutlarini kullanma izni
+    default: true
